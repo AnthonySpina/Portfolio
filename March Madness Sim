@@ -291,3 +291,324 @@ public class Bracket {
 	*/
 	}
 }
+
+public class Team {
+    // instance variables
+    private String name;
+    private int[] seedvs;
+    private int seedNum;
+
+    // constructor
+    public Team(int sn, String n) {
+        name = n;
+        seedNum = sn;
+        int[] sarr = new int[16];
+        seedvs = sarr;
+
+        // data
+        if (seedNum == 1) {
+            seedvs[0] = 500;
+            seedvs[1] = 545;
+            seedvs[2] = 634;
+            seedvs[3] = 705;
+            seedvs[4] = 825;
+            seedvs[5] = 706;
+            seedvs[6] = 857;
+            seedvs[7] = 791;
+            seedvs[8] = 905;
+            seedvs[9] = 875;
+            seedvs[10] = 556;
+            seedvs[11] = 1000;
+            seedvs[12] = 1000;
+            seedvs[13] = 0;
+            seedvs[14] = 0;
+            seedvs[15] = 993;
+        }
+        if (seedNum == 2) {
+            seedvs[0] = 455;
+            seedvs[1] = 500;
+            seedvs[2] = 609;
+            seedvs[3] = 500;
+            seedvs[4] = 286;
+            seedvs[5] = 722;
+            seedvs[6] = 700;
+            seedvs[7] = 400;
+            seedvs[8] = 500;
+            seedvs[9] = 635;
+            seedvs[10] = 842;
+            seedvs[11] = 1000;
+            seedvs[12] = 0;
+            seedvs[13] = 0;
+            seedvs[14] = 932;
+            seedvs[15] = 0;
+        }
+        if (seedNum == 3) {
+            seedvs[0] = 366;
+            seedvs[1] = 391;
+            seedvs[2] = 500;
+            seedvs[3] = 625;
+            seedvs[4] = 500;
+            seedvs[5] = 581;
+            seedvs[6] = 611;
+            seedvs[7] = 1000;
+            seedvs[8] = 1000;
+            seedvs[9] = 692;
+            seedvs[10] = 661;
+            seedvs[11] = 0;
+            seedvs[12] = 0;
+            seedvs[13] = 851;
+            seedvs[14] = 667;
+            seedvs[15] = 0;
+        }
+        if (seedNum == 4) {
+            seedvs[0] = 295;
+            seedvs[1] = 500;
+            seedvs[2] = 375;
+            seedvs[3] = 500;
+            seedvs[4] = 561;
+            seedvs[5] = 333;
+            seedvs[6] = 333;
+            seedvs[7] = 333;
+            seedvs[8] = 500;
+            seedvs[9] = 1000;
+            seedvs[10] = 0;
+            seedvs[11] = 705;
+            seedvs[12] = 796;
+            seedvs[13] = 0;
+            seedvs[14] = 0;
+            seedvs[15] = 0;
+        }
+        if (seedNum == 5) {
+            seedvs[0] = 175;
+            seedvs[0] = 714;
+            seedvs[0] = 500;
+            seedvs[0] = 439;
+            seedvs[0] = 500;
+            seedvs[5] = 1000;
+            seedvs[6] = 0;
+            seedvs[7] = 250;
+            seedvs[8] = 250;
+            seedvs[9] = 1000;
+            seedvs[10] = 0;
+            seedvs[11] = 667;
+            seedvs[12] = 842;
+            seedvs[13] = 0;
+            seedvs[14] = 0;
+            seedvs[15] = 0;
+        }
+        if (seedNum == 6) {
+            seedvs[0] = 294;
+            seedvs[1] = 278;
+            seedvs[2] = 419;
+            seedvs[3] = 667;
+            seedvs[4] = 0;
+            seedvs[5] = 0;
+            seedvs[6] = 667;
+            seedvs[7] = 250;
+            seedvs[8] = 0;
+            seedvs[9] = 600;
+            seedvs[10] = 625;
+            seedvs[11] = 0;
+            seedvs[12] = 0;
+            seedvs[13] = 875;
+            seedvs[14] = 0;
+            seedvs[15] = 0;
+        }
+        if (seedNum == 7) {
+            seedvs[0] = 143;
+            seedvs[1] = 300;
+            seedvs[2] = 389;
+            seedvs[3] = 667;
+            seedvs[4] = 0;
+            seedvs[5] = 333;
+            seedvs[6] = 0;
+            seedvs[7] = 500;
+            seedvs[8] = 0;
+            seedvs[9] = 605;
+            seedvs[10] = 0;
+            seedvs[11] = 0;
+            seedvs[12] = 0;
+            seedvs[13] = 1000;
+            seedvs[14] = 40;
+            seedvs[15] = 0;
+        }
+        if (seedNum == 8) {
+            seedvs[0] = 209;
+            seedvs[1] = 600;
+            seedvs[2] = 0;
+            seedvs[3] = 667;
+            seedvs[4] = 750;
+            seedvs[5] = 750;
+            seedvs[6] = 500;
+            seedvs[7] = 0;
+            seedvs[8] = 512;
+            seedvs[9] = 0;
+            seedvs[10] = 1000;
+            seedvs[11] = 0;
+            seedvs[12] = 1000;
+            seedvs[13] = 0;
+            seedvs[14] = 1000;
+            seedvs[15] = 0;
+        }
+        if (seedNum == 9) {
+            seedvs[0] = 95;
+            seedvs[1] = 500;
+            seedvs[2] = 0;
+            seedvs[3] = 500;
+            seedvs[4] = 750;
+            seedvs[5] = 0;
+            seedvs[6] = 0;
+            seedvs[7] = 488;
+            seedvs[8] = 0;
+            seedvs[9] = 1000;
+            seedvs[10] = 0;
+            seedvs[11] = 0;
+            seedvs[12] = 1000;
+            seedvs[13] = 0;
+            seedvs[14] = 0;
+            seedvs[15] = 1000;
+        }
+        if (seedNum == 10) {
+            seedvs[0] = 125;
+            seedvs[1] = 365;
+            seedvs[2] = 308;
+            seedvs[3] = 0;
+            seedvs[4] = 0;
+            seedvs[5] = 400;
+            seedvs[6] = 395;
+            seedvs[7] = 0;
+            seedvs[8] = 0;
+            seedvs[9] = 0;
+            seedvs[10] = 500;
+            seedvs[11] = 0;
+            seedvs[12] = 0;
+            seedvs[13] = 1000;
+            seedvs[14] = 1000;
+            seedvs[15] = 0;
+        }
+        if (seedNum == 11) {
+            seedvs[0] = 444;
+            seedvs[1] = 158;
+            seedvs[2] = 339;
+            seedvs[3] = 0;
+            seedvs[4] = 0;
+            seedvs[5] = 375;
+            seedvs[6] = 1000;
+            seedvs[7] = 0;
+            seedvs[8] = 1000;
+            seedvs[9] = 50;
+            seedvs[10] = 0;
+            seedvs[11] = 0;
+            seedvs[12] = 0;
+            seedvs[13] = 1000;
+            seedvs[14] = 0;
+            seedvs[15] = 0;
+        }
+        if (seedNum == 12) {
+            seedvs[0] = 0;
+            seedvs[1] = 0;
+            seedvs[2] = 0;
+            seedvs[3] = 295;
+            seedvs[4] = 333;
+            seedvs[5] = 0;
+            seedvs[6] = 0;
+            seedvs[7] = 1000;
+            seedvs[8] = 0;
+            seedvs[9] = 0;
+            seedvs[10] = 0;
+            seedvs[11] = 0;
+            seedvs[12] = 750;
+            seedvs[13] = 0;
+            seedvs[14] = 0;
+            seedvs[15] = 0;
+        }
+        if (seedNum == 13) {
+            seedvs[0] = 0;
+            seedvs[1] = 0;
+            seedvs[2] = 0;
+            seedvs[3] = 204;
+            seedvs[4] = 158;
+            seedvs[5] = 0;
+            seedvs[6] = 0;
+            seedvs[7] = 0;
+            seedvs[8] = 0;
+            seedvs[9] = 0;
+            seedvs[10] = 0;
+            seedvs[11] = 250;
+            seedvs[12] = 0;
+            seedvs[13] = 0;
+            seedvs[14] = 0;
+            seedvs[15] = 0;
+        }
+        if (seedNum == 14) {
+            seedvs[0] = 0;
+            seedvs[1] = 0;
+            seedvs[2] = 149;
+            seedvs[3] = 0;
+            seedvs[4] = 0;
+            seedvs[5] = 125;
+            seedvs[6] = 0;
+            seedvs[7] = 0;
+            seedvs[8] = 0;
+            seedvs[9] = 0;
+            seedvs[10] = 0;
+            seedvs[11] = 0;
+            seedvs[12] = 0;
+            seedvs[13] = 0;
+            seedvs[14] = 0;
+            seedvs[15] = 0;
+        }
+        if (seedNum == 15) {
+            seedvs[0] = 0;
+            seedvs[1] = 68;
+            seedvs[2] = 333;
+            seedvs[3] = 0;
+            seedvs[4] = 0;
+            seedvs[5] = 0;
+            seedvs[6] = 600;
+            seedvs[7] = 0;
+            seedvs[8] = 0;
+            seedvs[9] = 0;
+            seedvs[10] = 0;
+            seedvs[11] = 0;
+            seedvs[12] = 0;
+            seedvs[13] = 0;
+            seedvs[14] = 0;
+            seedvs[15] = 0;
+        }
+        if (seedNum == 16) {
+            seedvs[0] = 7;
+            seedvs[1] = 0;
+            seedvs[2] = 0;
+            seedvs[3] = 0;
+            seedvs[4] = 0;
+            seedvs[5] = 0;
+            seedvs[6] = 0;
+            seedvs[7] = 0;
+            seedvs[8] = 0;
+            seedvs[9] = 0;
+            seedvs[10] = 0;
+            seedvs[11] = 0;
+            seedvs[12] = 0;
+            seedvs[13] = 0;
+            seedvs[14] = 0;
+            seedvs[15] = 0;
+        }
+    }
+
+    // getters for attributes
+
+    public String getName() {
+        return name;
+    }
+
+    public int getSeedNum() {
+        return seedNum;
+    }
+
+    public int[] getStatArr() {
+        return seedvs;
+    }
+
+}
+
