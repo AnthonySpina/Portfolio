@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+    <center>
+        <body>
+            <style>
+                body {
+                  font-family: Georgia, serif;
+                }
+            </style>
+            <h1 style="color: rgb(5, 3, 92)">
+                Millburn GPA Calculator
+            </h1>
+            <i>
+                By: Anthony Spina, Alex Morales
+            </i>
+            <br>
+
+            <!-- Class 1! -->
+            <p> <br>Class 1
+                <select id="grade1">
+                    <option value="0">A</option>
+                    <option value="1">A-</option>
+                    <option value="2">B+</option>
+                    <option value="3">B</option>
+                    <option value="4">B-</option>
+                    <option value="5">C+</option>
+                    <option value="6">C</option>
+                    <option value="7">C-</option>
+                    <option value="8">D+</option>
+                    <option value="9">D</option>
+                    <option value="10">D-</option>
+                    <option value="11">F</option>
+                </select>
+                <select id="level1">
+                    <option value="0">AP</option>
+                    <option value="1">ACC</option>
+                    <option value="2">CPA</option>
+                </select>
+            </p>
+
+             <!-- Class 2! -->
+            <p> Class 2
+                <select id="grade2">
+                    <option value="0">A</option>
+                    <option value="1">A-</option>
+                    <option value="2">B+</option>
+                    <option value="3">B</option>
+                    <option value="4">B-</option>
+                    <option value="5">C+</option>
+                    <option value="6">C</option>
+                    <option value="7">C-</option>
+                    <option value="8">D+</option>
+                    <option value="9">D</option>
+                    <option value="10">D-</option>
+                    <option value="11">F</option>
+                </select>
+                <select id="level2">
+                    <option value="0">AP</option>
+                    <option value="1">ACC</option>
+                    <option value="2">CPA</option>
+                </select>
+            </p>
+
+             <!-- Class 3! -->
+            <p> Class 3
+                <select id="grade3">
+                    <option value="0">A</option>
+                    <option value="1">A-</option>
+                    <option value="2">B+</option>
+                    <option value="3">B</option>
+                    <option value="4">B-</option>
+                    <option value="5">C+</option>
+                    <option value="6">C</option>
+                    <option value="7">C-</option>
+                    <option value="8">D+</option>
+                    <option value="9">D</option>
+                    <option value="10">D-</option>
+                    <option value="11">F</option>
+                </select>
+                <select id="level3">
+                    <option value="0">AP</option>
+                    <option value="1">ACC</option>
+                    <option value="2">CPA</option>
+                </select>
+            </p>
+
+             <!-- Class 4! -->
+            <p> Class 4
+                <select id="grade4">
+                    <option value="0">A</option>
+                    <option value="1">A-</option>
+                    <option value="2">B+</option>
+                    <option value="3">B</option>
+                    <option value="4">B-</option>
+                    <option value="5">C+</option>
+                    <option value="6">C</option>
+                    <option value="7">C-</option>
+                    <option value="8">D+</option>
+                    <option value="9">D</option>
+                    <option value="10">D-</option>
+                    <option value="11">F</option>
+                </select>
+                <select id="level4">
+                    <option value="0">AP</option>
+                    <option value="1">ACC</option>
+                    <option value="2">CPA</option>
+                </select>
+            </p>
+
+             <!-- Class 5! -->
+            <p> Class 5
+                <select id="grade5">
+                    <option value="0">A</option>
+                    <option value="1">A-</option>
+                    <option value="2">B+</option>
+                    <option value="3">B</option>
+                    <option value="4">B-</option>
+                    <option value="5">C+</option>
+                    <option value="6">C</option>
+                    <option value="7">C-</option>
+                    <option value="8">D+</option>
+                    <option value="9">D</option>
+                    <option value="10">D-</option>
+                    <option value="11">F</option>
+                </select>
+                <select id="level5">
+                    <option value="0">AP</option>
+                    <option value="1">ACC</option>
+                    <option value="2">CPA</option>
+                </select>
+            </p>
+
+             <!-- Class 6! -->
+            <p> Class 6
+                <select id="grade6">
+                    <option value="0">A</option>
+                    <option value="1">A-</option>
+                    <option value="2">B+</option>
+                    <option value="3">B</option>
+                    <option value="4">B-</option>
+                    <option value="5">C+</option>
+                    <option value="6">C</option>
+                    <option value="7">C-</option>
+                    <option value="8">D+</option>
+                    <option value="9">D</option>
+                    <option value="10">D-</option>
+                    <option value="11">F</option>
+                </select>
+                <select id="level6">
+                    <option value="0">AP</option>
+                    <option value="1">ACC</option>
+                    <option value="2">CPA</option>
+                </select>
+            </p>
+
+             <!-- Class 7! -->
+            <p> Class 7
+                <select id="grade7">
+                    <option value="0">A</option>
+                    <option value="1">A-</option>
+                    <option value="2">B+</option>
+                    <option value="3">B</option>
+                    <option value="4">B-</option>
+                    <option value="5">C+</option>
+                    <option value="6">C</option>
+                    <option value="7">C-</option>
+                    <option value="8">D+</option>
+                    <option value="9">D</option>
+                    <option value="10">D-</option>
+                    <option value="11">F</option>
+                </select>
+                <select id="level7">
+                    <option value="0">AP</option>
+                    <option value="1">ACC</option>
+                    <option value="2">CPA</option>
+                </select>
+            </p>
+
+            <button onclick="getGPA()">  Calculate </button>
+
+            <p> <br>Weighted GPA:
+                <span style="color: rgb(5, 3, 92)" class="weighted"></span>
+            </p>
+
+            <p> Unweighted GPA:
+                <span style="color: rgb(5, 3, 92)" class="unweighted"></span>
+            </p>
+
+            <script type="text/javascript">
+            let ap =  [4.667, 4.333, 4.000, 3.667, 3.333, 2.667, 2.000, 1.667, 1.333, 1.000, 0.667, 0.000];
+            let acc = [4.333, 4.000, 3.667, 3.333, 3.000, 2.667, 2.000, 1.667, 1.333, 1.000, 0.667, 0.000];
+            let cpa = [4.000, 3.667, 3.333, 3.000, 2.667, 2.333, 2.000, 1.667, 1.333, 1.000, 0.667, 0.000];
+
+            function calcValue(level, grade)
+            {
+                if(level == "0")
+                {
+                    result = ap[grade];
+                    return result;
+                }
+                if(level == "1")
+                {
+                    result = acc[grade]
+                    return result;
+                }
+                if(level == "2")
+                {
+                    result = cpa[grade];
+                    return result;
+                }
+            }
+            function getGPA() 
+            {
+                let total = 0;
+                level1 = document.querySelector('#level1');
+                grade1 = document.querySelector('#grade1');
+                total = total + calcValue(level1.value, grade1.value);
+
+                level2 = document.querySelector('#level2');
+                grade2 = document.querySelector('#grade2');
+                total = total + calcValue(level2.value, grade2.value);
+
+                level3 = document.querySelector('#level3');
+                grade3 = document.querySelector('#grade3');
+                total = total + calcValue(level3.value, grade3.value);
+
+                level4 = document.querySelector('#level4');
+                grade4 = document.querySelector('#grade4');
+                total = total + calcValue(level4.value, grade4.value);
+
+                level5 = document.querySelector('#level5');
+                grade5 = document.querySelector('#grade5');
+                total = total + calcValue(level5.value, grade5.value);
+
+                level6 = document.querySelector('#level6');
+                grade6 = document.querySelector('#grade6');
+                total = total + calcValue(level1.value, grade1.value);
+
+                level7 = document.querySelector('#level7');
+                grade7 = document.querySelector('#grade7');
+                total = total + calcValue(level7.value, grade7.value);
+
+                let weighted = total/7;
+                let unweighted = cpa[grade1.value]+ cpa[grade2.value] + cpa[grade3.value] + cpa[grade4.value] + cpa[grade5.value] + cpa[grade6.value] + cpa[grade7.value];
+                unweighted = unweighted/7;
+                weighted = Math.round(1000*weighted)/1000
+                unweighted = Math.round(1000*unweighted)/1000
+
+                document.querySelector('.unweighted').textContent = unweighted;
+                document.querySelector('.weighted').textContent = weighted;
+            }
+            </script>
+        </body>
+    </center>
+</html>
