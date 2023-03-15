@@ -1,0 +1,169 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+class Main 
+{
+  public static int getIndexOfLargest( int[] array )
+  {
+    int largest = 0;
+    for (int i=1;i<array.length;i++)
+    {
+        //goes through entire array finding the largest value
+        if(array[i]>array[largest])
+        {
+          largest = i;
+        }
+    }
+    return largest; //index value of largest value
+  }
+  
+  public static void main(String[] args) 
+  {
+    try {
+      File f = new File("words.txt");
+      Scanner scanner = new Scanner(f);
+      String[] words = new String[20];
+      System.out.println();
+      System.out.println("   Dictionary of Words");
+      System.out.println("-------------------------");
+      System.out.println();
+
+      // print words
+      for(int i=0; i<20; i++)
+        {
+          String str = scanner.nextLine();
+          words[i] = str;
+          System.out.println(str);
+        }
+      System.out.println();
+      System.out.println("-------------------------");
+      System.out.println();
+
+      Scanner in = new Scanner(System.in);
+      boolean go = true;
+      while(go)
+        {
+          System.out.print("Type in a word: ");
+          String userWord = in.nextLine();
+          System.out.println();
+    
+          //declaring variables
+          boolean foundMatch = false;
+          boolean needsCheck = false;
+          int j = 0;
+          int wordValue = 0;
+          int[] wv = new int[20];
+          String word = "";
+          int length = userWord.length();
+          char ch;
+          
+          while(!foundMatch) // !false = true
+            {
+              if(j == words.length) //Spell Checker
+              {
+                System.out.println(userWord + " is not in the dictionary");
+                System.out.println();
+                needsCheck = true;
+                break;
+              }
+              if(userWord.equals(words[j])) // good
+              {
+                System.out.println(words[j] + " is spelled correctly");
+                System.out.println();
+                foundMatch = true;
+              }
+              j++;
+            }
+    
+          if(needsCheck)
+          {
+            for(int l=0; l<20; l++) // assigns each word a cost
+              {
+                word = words[l];//words equals voice
+                char fl = userWord.charAt(0);
+                char sl = userWord.charAt(1);
+                char ll = userWord.charAt(userWord.length()-1);
+                if(fl == word.charAt(0))
+                {
+                  wordValue = 3;
+                }
+                if(sl == word.charAt(1))
+                {
+                  wordValue = wordValue + 3;
+                }
+                if(ll == word.charAt(word.length()-1))
+                {
+                  wordValue = wordValue + 3;
+                }
+                if(length == word.length())
+                {
+                  wordValue = wordValue + 3;
+                }
+                for(int p=0; p<length; p++)
+                  {
+                    ch=userWord.charAt(p); //ch = user word at index p (p = userword length)
+                    for(int g=0; g<word.length(); g++) // runs based on dictionary word legnth
+                      {
+                        if(ch == word.charAt(g))
+                        { 
+                          wordValue++;
+                        }
+                        
+                      }
+                  }
+                // System.out.println(word + " " + wordValue);
+                wv[l] = wordValue;
+                wordValue = 0;
+              }
+            int winningIndex = getIndexOfLargest(wv);
+            if(winningIndex >= 3)
+            {
+              System.out.println(words[winningIndex] + " is the closest Match");
+              System.out.println();
+            }
+            else
+            {
+              System.out.println("No similar words, sorry");
+              System.out.println();
+            }
+          }
+
+          System.out.print("Do you want to type another word? (yes/no):  ");
+          String again = in.nextLine();
+          if(again.equals("no"))
+          {
+            go = false;
+          }
+          System.out.println();
+          System.out.println();
+
+        }
+
+    } catch (FileNotFoundException e) 
+          {         
+            e.printStackTrace();
+          }
+  }
+}
+
+voice
+curved
+jumbled
+violent
+six
+rake
+cable
+marvelous
+lively
+successful
+baseball
+mighty
+eggs
+title
+contain
+phobic
+mess
+simple
+admit
+sheep
